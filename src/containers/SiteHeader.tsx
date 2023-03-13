@@ -139,7 +139,7 @@ const SiteHeader = () => {
     return (
       <div className="relative z-40 hidden lg:block">
         <div className="fixed right-3 top-1/4 z-40 flex items-center">
-          <Popover className="relative">
+          {/* <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
@@ -184,7 +184,7 @@ const SiteHeader = () => {
                 </Transition>
               </>
             )}
-          </Popover>
+          </Popover> */}
         </div>
       </div>
     );
@@ -213,9 +213,9 @@ const SiteHeader = () => {
   return (
     <>
       <Helmet>
-        <title>Premier Auto Leasing || Booking React Template</title>
+        <title>Premier Auto Leasing || Premier Auto Group is the top-rated online car leasing company in New York</title>
       </Helmet>
-      {renderControlSelections()}
+      {/* {renderControlSelections()} */}
       {renderHeader()}
       <div ref={anchorRef} className="h-1 absolute invisible"></div>
     </>

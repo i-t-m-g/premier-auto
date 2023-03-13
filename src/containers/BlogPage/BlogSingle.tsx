@@ -296,7 +296,7 @@ const BlogSingle = () => {
   return (
     <div className="nc-PageSingle pt-8 lg:pt-16 ">
       <Helmet>
-        <title>Single Blog || Booking React Template</title>
+        <title>Single Blog || Premier Auto Group is the top-rated online car leasing company in New York</title>
       </Helmet>
       {renderHeader()}
       <NcImage

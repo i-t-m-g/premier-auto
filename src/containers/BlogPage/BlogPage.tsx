@@ -18,7 +18,7 @@ const BlogPage: React.FC = () => {
   return (
     <div className="nc-BlogPage overflow-hidden relative">
       <Helmet>
-        <title>Blog || Booking React Template</title>
+        <title>Blog || Premier Auto Group is the top-rated online car leasing company in New York</title>
       </Helmet>
 
       {/* ======== BG GLASS ======== */}
