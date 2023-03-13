@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import imagePng from "images/nikita-kachanovsky.jpg";
-import { useHref, useNavigate } from "react-router-dom";
+import { Link, NavLink, useHref, useLocation, useNavigate } from "react-router-dom";
 
 export interface SectionHero3Props {
   className?: string;
@@ -10,7 +10,9 @@ export interface SectionHero3Props {
 const SectionHero3: FC<SectionHero3Props> = ({ className = "" }) => {
   const navigate = useNavigate();
 
-  const handleClick = () => navigate("/add-listing");
+  // const handleClick = () => {
+  //   navigate("https://eform.pandadoc.com/?eform=1bad74cc-821a-4477-b2de-66c8b60bbf70")
+  // }
 
   return (
     <div
@@ -24,13 +26,18 @@ const SectionHero3: FC<SectionHero3Props> = ({ className = "" }) => {
         <h2 className="font-bold text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl !leading-[115%] ">
           Lease Smarter with Premier Auto Group
         </h2>
-        <ButtonPrimary
-          onClick={handleClick}
-          sizeClass="px-6 py-3 lg:px-8 lg:py-4 rounded-xl"
-          fontSize="text-sm sm:text-base lg:text-lg font-medium"
+
+        <a
+        href="https://eform.pandadoc.com/?eform=1bad74cc-821a-4477-b2de-66c8b60bbf70"
         >
-          Start Your Application
-        </ButtonPrimary>
+          <ButtonPrimary
+            sizeClass="px-6 py-3 lg:px-8 lg:py-4 rounded-xl"
+            fontSize="text-sm sm:text-base lg:text-lg font-medium"
+          >
+            Start Your Application
+          </ButtonPrimary>
+        </a>
+
       </div>
       <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-4 sm:aspect-h-3 lg:aspect-w-16 lg:aspect-h-9 xl:aspect-h-8 ">
         <img
