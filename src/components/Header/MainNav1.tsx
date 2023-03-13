@@ -20,19 +20,20 @@ const MainNav1: FC<MainNav1Props> = ({ className = "" }) => {
           <Navigation />
         </div>
 
-        <div className="lg:hidden flex-[3] max-w-lg !mx-auto md:px-3">
+        {/* <div className="lg:hidden flex-[3] max-w-lg !mx-auto md:px-3">
           <HeroSearchForm2MobileFactory />
-        </div>
+        </div> */}
 
-        <div className="hidden md:flex flex-shrink-0 items-center justify-end flex-1 lg:flex-none text-neutral-700 dark:text-neutral-100">
-          <div className="hidden xl:flex items-center space-x-0.5">
+        <div className="flex flex-shrink-0 items-center justify-end flex-1 lg:flex-none text-neutral-700 dark:text-neutral-100">
+          <div className="hidden md:flex items-center space-x-0.5">
             <SwitchDarkMode />
             {/* <SearchDropdown /> */}
             <div className="px-1" />
-            <ButtonPrimary href="/add-listing">Start Your Application</ButtonPrimary>
+            <ButtonPrimary href="https://eform.pandadoc.com/?eform=1bad74cc-821a-4477-b2de-66c8b60bbf70">Start Your Application</ButtonPrimary>
           </div>
-          <div className="flex xl:hidden items-center">
+          <div className="flex md:hidden items-center">
             <SwitchDarkMode />
+            <ButtonPrimary href="https://eform.pandadoc.com/?eform=1bad74cc-821a-4477-b2de-66c8b60bbf70">Start Your Application</ButtonPrimary>
             <div className="px-0.5" />
             <MenuBar />
           </div>

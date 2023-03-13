@@ -12,7 +12,7 @@ export interface ButtonProps {
   loading?: boolean;
   disabled?: boolean;
   type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
-  href?: keyof LocationStates | "#" | LinkProps["to"];
+  href?: string;
   targetBlank?: boolean;
   onClick?: () => void;
   children?: React.ReactNode;
@@ -62,15 +62,15 @@ const Button: FC<ButtonProps> = ({
 
   if (!!href) {
     return (
-      <Link
-        to={href}
+      <a
+        href={href}
         target={targetBlank ? "_blank" : undefined}
         className={`${CLASSES} `}
         onClick={onClick}
         rel="noopener noreferrer"
       >
         {children || `This is Link`}
-      </Link>
+      </a>
     );
   }
 
