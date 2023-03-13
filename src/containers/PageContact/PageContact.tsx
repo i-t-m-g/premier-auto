@@ -16,15 +16,15 @@ export interface PageContactProps {
 const info = [
   {
     title: "🗺 ADDRESS",
-    desc: "Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter",
+    desc: "8515 Main St # 6 Jamaica, NY 11435",
   },
   {
     title: "💌 EMAIL",
-    desc: "nc.example@example.com",
+    desc: "sam@premierautolesingny.com",
   },
   {
     title: "☎ PHONE",
-    desc: "000-123-456-7890",
+    desc: "718-770-7980",
   },
 ];
 
