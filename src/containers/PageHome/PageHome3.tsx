@@ -81,10 +81,10 @@ function PageHome3() {
       <BgGlassmorphism />
 
       {/* SECTION HERO */}
-      <motion.div 
+      <div 
         className="container px-1 sm:px-4 mb-24 ">
         <SectionHero3 className="" />
-      </motion.div>
+      </div>
 
       <div className="container relative space-y-24 mb-24 ">
         {/* SECTION 1 */}

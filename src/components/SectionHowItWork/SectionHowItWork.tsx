@@ -75,18 +75,8 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
                 />
               </>
             ) : (
-              <motion.img
-                animate={{
-                  rotate: [0, 0, 90, -45, 0],
-                }}
-                transition={{
-                  duration: 2,
-                  ease: "easeInOut",
-                  times: [0, 0.2, 0.5, 0.8, 1],
-                  repeat: Infinity,
-                  repeatDelay: 1
-                }}
-                // containerClassName="mb-8 max-w-[200px] mx-auto"
+              <NcImage
+                containerClassName="mb-8 max-w-[200px] mx-auto"
                 src={item.img}
               />
             )}
