@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import imagePng from "images/nikita-kachanovsky.jpg";
+import { motion } from "framer-motion";
 import { Link, NavLink, useHref, useLocation, useNavigate } from "react-router-dom";
 
 export interface SectionHero3Props {
@@ -34,13 +35,28 @@ const SectionHero3: FC<SectionHero3Props> = ({ className = "" }) => {
             sizeClass="px-6 py-3 lg:px-8 lg:py-4 rounded-xl"
             fontSize="text-sm sm:text-base lg:text-lg font-medium"
           >
+
             Start Your Application
           </ButtonPrimary>
         </a>
 
       </div>
       <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-4 sm:aspect-h-3 lg:aspect-w-16 lg:aspect-h-9 xl:aspect-h-8 ">
-        <img
+        <motion.img
+
+          animate={{
+            scale: [1, 1.1, 1.1, 1, 1],
+            rotate: [0, 0, 4, -4, 0],
+            // borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1
+          }}
+
           className="absolute inset-0 object-cover rounded-xl"
           src={imagePng}
           alt="hero"

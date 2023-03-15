@@ -24,21 +24,21 @@ const DEMO_DATA = [
     clientName: "Tiana Abie",
     clientAddress: "Malaysia",
     content:
-      "This place is exactly like the picture posted on Premier Auto Leasing. Great service, we had a great stay!",
+      "From start to finish, the entire leasing process was smooth and stress-free. The team was incredibly helpful and always available to answer any questions I had.",
   },
   {
     id: 2,
     clientName: "Lennie Swiffan",
     clientAddress: "London",
     content:
-      "This place is exactly like the picture posted on Premier Auto Leasing. Great service, we had a great stay!",
+      "I'm so happy with my new car, and I would highly recommend Premier Auto Group to anyone in the market for a new vehicle.",
   },
   {
     id: 3,
     clientName: "Berta Emili",
     clientAddress: "Tokyo",
     content:
-      "This place is exactly like the picture posted on Premier Auto Leasing. Great service, we had a great stay!",
+      "Premier Auto Group truly exceeded my expectations. The financing process was straightforward, and I was able to get a great deal on my lease.",
   },
 ];
 
@@ -93,7 +93,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
       data-nc-id="SectionClientSay"
     >
       <Heading desc="Let's see what people think of Premier Auto Leasing" isCenter>
-        Good news from far away
+        Good news from our clients
       </Heading>
       <div className="relative md:mb-16 max-w-2xl mx-auto">
         {renderBg()}
@@ -120,29 +120,6 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
                   <span className="block mt-8 text-2xl font-semibold">
                     {item.clientName}
                   </span>
-                  <div className="flex items-center space-x-2 text-lg mt-2 text-neutral-400">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-                    <span>{item.clientAddress}</span>
-                  </div>
                 </li>
               ))}
             </ul>

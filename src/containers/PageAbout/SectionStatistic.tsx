@@ -10,20 +10,20 @@ export interface Statistic {
 const FOUNDER_DEMO: Statistic[] = [
   {
     id: "1",
-    heading: "10 million",
+    heading: "10 thousand+",
     subHeading:
-      "Articles have been public around the world (as of Sept. 30, 2021)",
+      "happy customers who have chosen Premier Auto Group for their car leasing needs",
   },
   {
     id: "2",
-    heading: "100,000",
-    subHeading: "Registered users account (as of Sept. 30, 2021)",
+    heading: "95%",
+    subHeading: "of customers recommend us to friends and family.",
   },
   {
     id: "3",
-    heading: "220+",
+    heading: "$3000",
     subHeading:
-      "Countries and regions have our presence (as of Sept. 30, 2021)",
+      "Average savings per lease compared to traditional dealerships.",
   },
 ];
 
@@ -35,8 +35,9 @@ const SectionStatistic: FC<SectionStatisticProps> = ({ className = "" }) => {
   return (
     <div className={`nc-SectionStatistic relative ${className}`}>
       <Heading
-        desc=" We’re impartial and independent, and every day we create distinctive,
-          world-class programmes and content"
+        desc="We are committed to providing the highest level of customer service 
+        and making sure you are completely satisfied with your new vehicle."
+          
       >
         🚀 Fast Facts
       </Heading>

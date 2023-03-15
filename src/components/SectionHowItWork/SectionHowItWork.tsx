@@ -5,6 +5,7 @@ import HIW1img from "images/HIW1.png";
 import HIW2img from "images/HIW2.png";
 import HIW3img from "images/HIW3.png";
 import VectorImg from "images/VectorHIW.svg";
+import { motion } from "framer-motion";
 
 export interface SectionHowItWorkProps {
   className?: string;
@@ -44,6 +45,7 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
 }) => {
   return (
     <div
+    
       className={`nc-SectionHowItWork  ${className}`}
       data-nc-id="SectionHowItWork"
     >
@@ -73,8 +75,18 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
                 />
               </>
             ) : (
-              <NcImage
-                containerClassName="mb-8 max-w-[200px] mx-auto"
+              <motion.img
+                animate={{
+                  rotate: [0, 0, 90, -45, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.2, 0.5, 0.8, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1
+                }}
+                // containerClassName="mb-8 max-w-[200px] mx-auto"
                 src={item.img}
               />
             )}

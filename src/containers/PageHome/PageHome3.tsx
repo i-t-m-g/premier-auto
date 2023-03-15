@@ -21,6 +21,7 @@ import HIW2imgDark from "images/HIW2-2-dark.png";
 import HIW3imgDark from "images/HIW2-3-dark.png";
 import rightImgPng from "images/our-features-2.png";
 import SectionOurFeatures from "components/SectionOurFeatures/SectionOurFeatures";
+import { motion, useCycle } from "framer-motion";
 
 
 
@@ -73,15 +74,6 @@ const DEMO_CATS_2: TaxonomyType[] = [
 ];
 
 function PageHome3() {
-  // CUSTOM THEME STYLE
-  useEffect(() => {
-    const $body = document.querySelector("body");
-    if (!$body) return;
-    $body.classList.add("theme-purple-blueGrey");
-    return () => {
-      $body.classList.remove("theme-purple-blueGrey");
-    };
-  }, []);
 
   return (
     <div className="nc-PageHome3 relative overflow-hidden">
@@ -89,9 +81,10 @@ function PageHome3() {
       <BgGlassmorphism />
 
       {/* SECTION HERO */}
-      <div className="container px-1 sm:px-4 mb-24 ">
+      <motion.div 
+        className="container px-1 sm:px-4 mb-24 ">
         <SectionHero3 className="" />
-      </div>
+      </motion.div>
 
       <div className="container relative space-y-24 mb-24 ">
         {/* SECTION 1 */}
